@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts
+    script(src='app.js')
+block style
+    style
+      include ../static/style.css   
+block content
+    .start_btn  
+        button Start Quiz 
+    .info-box 
+        .info-title 
+            Online Some Rules of this Online Quiz 
+        .info-list 
+            .info 1. You will have only <span>15 seconds</span> to answer for each question.
+            .info 2. Once you select your answer, it can neither be undo nor be changed.
+            .info 3. You can't select any option once time goes off.
+            .info 4. You can't exit from the Quiz while you're playing.
+            .info 5. You'll get points on the basis of your correct answers.
+        .buttons 
+            button 
+                .quit Exit Quiz   
+            button 
+                .restart Retry Now  
+             
+
